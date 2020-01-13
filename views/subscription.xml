@@ -1,28 +1,25 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
+    
     <record model="ir.ui.view" id="subscription.list">
       <field name="name">subscription list</field>
       <field name="model">subscription.subscription</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="customer"/>
         </tree>
       </field>
     </record>
-    -->
+    
 
     <!-- actions opening views on models -->
-    <!--
     <record model="ir.actions.act_window" id="subscription.action_window">
       <field name="name">subscription window</field>
       <field name="res_model">subscription.subscription</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
 
     <!-- server action to the one above -->
     <!--
@@ -40,9 +37,7 @@
     -->
 
     <!-- Top menu item -->
-    <!--
     <menuitem name="subscription" id="subscription.menu_root"/>
-    -->
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="subscription.menu_1" parent="subscription.menu_root"/>
